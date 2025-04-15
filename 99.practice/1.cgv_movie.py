@@ -30,7 +30,6 @@ for i in range(10):
         actor.text
         actor_list.append(actor.text)
         # print(actor.text)
-    
     genre = driver.find_element(By.CSS_SELECTOR, 'div.spec dt:nth-of-type(3)').text
     # print(genre)
     opening_date = driver.find_element(By.CSS_SELECTOR, 'div.spec dd:nth-of-type(6)').text
@@ -42,7 +41,7 @@ for i in range(10):
 
 # print(movie_list)
 
-local_file_path = '/home/ubuntu/damf2/data/cgv_movie/'
+local_file_path = '/home/ubuntu/damf2/data/practice/cgv_movie/'
 
 def save_to_csv(movie_list):
     with open(local_file_path + 'cgv-top-10', 'w', encoding='utf-8') as file:
